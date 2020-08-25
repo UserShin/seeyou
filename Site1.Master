@@ -1,0 +1,135 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ShinNiz.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+   <title>Full Secondary Column, Single Main Column.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" >
+<link rel="stylesheet" type="text/css" href="styles.css" >
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+        .auto-style2 {
+            position: relative;
+            _position: static;
+            left: 0px;
+            top: 0px;
+            height: 604px;
+        }
+        .auto-style3 {
+            height: 498px;
+            background: #5d114a;
+            border-top: #FFFFFF 2px solid;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+        .auto-style4 {
+            height: 464px;
+        }
+        .auto-style5 {
+            height: 503px;
+        }
+        .auto-style6 {
+            color: #FFFFFF;
+        }
+        .newStyle1 {
+            color: #FFFFFF;
+        }
+        .newStyle2 {
+            color: #FFFFFF;
+            font-size: medium;
+        }
+        .auto-style7 {
+            width: 100%;
+        }
+        .auto-style8 {
+            width: 169px;
+        }
+        .auto-style9 {
+            width: 238px;
+        }
+        .auto-style10 {
+            width: 260px;
+        }
+        .auto-style11 {
+            color: #FFFFFF;
+            font-size: large;
+        }
+        .auto-style12 {
+            text-align: left;
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+      <div id="doc" class="yui-t7">
+  <div id="hd">
+    <div id="header" class="auto-style1">
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <asp:Label ID="Label1" runat="server" CssClass="auto-style6" Text="Label"></asp:Label>
+                <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick">
+                </asp:Timer>
+                <asp:ScriptManager ID="ScriptManager1" runat="server">
+                </asp:ScriptManager>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+      </div>
+  </div>
+  <div id="bd">
+    <div id="yui-main" class="auto-style5">
+      <div class="yui-b">
+        <div class="auto-style3">&nbsp;
+            <br />
+            <br />
+            <strong>
+            <asp:LinkButton ID="LinkButton1" runat="server" CssClass="newStyle1" PostBackUrl="~/login.aspx">Sign In</asp:LinkButton>
+            </strong>
+            <br />
+            <asp:Image ID="Image1" runat="server" Height="345px" ImageUrl="~/images/Canva - Woman Hanging Out.jpg" Width="304px" />
+            <asp:Image ID="Image2" runat="server" Height="344px" ImageUrl="~/images/Canva - Women Being Silly.jpg" Width="307px" />
+            <asp:Image ID="Image3" runat="server" Height="343px" ImageUrl="~/images/Canva - Women Doing Yoga.jpg" Width="302px" />
+            <br />
+            <table class="auto-style7">
+                <tr>
+                    <td class="auto-style8">
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style11" NavigateUrl="~/Home.aspx">HOME</asp:HyperLink>
+                    </td>
+                    <td class="auto-style9">
+                        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style11" NavigateUrl="~/Who are we.aspx">WHO ARE WE</asp:HyperLink>
+                    </td>
+                    <td class="auto-style10">
+                        <asp:HyperLink ID="HyperLink3" runat="server" CssClass="auto-style11" NavigateUrl="~/Testimonials.aspx">TESTIMONIALS</asp:HyperLink>
+                    </td>
+                    <td>
+                        <asp:HyperLink ID="HyperLink4" runat="server" CssClass="auto-style11" NavigateUrl="~/ContactDetails.aspx">CONTACT DETAILS</asp:HyperLink>
+                    </td>
+                </tr>
+            </table>
+          </div>
+      </div>
+    </div>
+    <div class="auto-style2">
+      <div id="secondary" class="auto-style4">
+          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+      </div>
+         
+    </div>
+  </div>
+           
+        <div id="ft">
+    <div id="footer" class="auto-style12">&nbsp;<span class="newStyle1">If you have any queries, go to this link </span>
+        <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" ForeColor="White" NavigateUrl="~/Queries.aspx">Queries</asp:HyperLink>
+        <span class="newStyle1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright by @ShinNiz<br />
+        </span></div>
+  </div>
+    </form>
+</body>
+</html>
